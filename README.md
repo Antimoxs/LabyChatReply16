@@ -1,4 +1,4 @@
-# LabyChatReply for LabyMod 1.16.5 [v1.2]
+# LabyChatReply for LabyMod 1.16.5 [v1.2] [![Gradle build](https://github.com/Antimoxs/LabyChatReply16/actions/workflows/gradle.yml/badge.svg)](https://github.com/Antimoxs/LabyChatReply16/actions/workflows/gradle.yml)
 by Antimoxs
 
 Reply to the LabyMod Chat ingame with LabyChatReply by Antimoxs. For more information join our discord: https://discord.gg/ATdbUS4
