@@ -19,7 +19,7 @@ import java.util.Set;
 public class LabyChatReply extends LabyModAddon {
 
     public ChatUser lastUser = null;
-    private String version = "1.2";
+    private String version = "1.2.0.5";
     private String lmcSyntax = "lmc";
     private String lmrSyntax = "lmr";
     public boolean msgToggl = true;

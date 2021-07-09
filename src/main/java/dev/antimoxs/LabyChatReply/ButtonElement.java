@@ -34,6 +34,9 @@ public class ButtonElement extends ControlElement {
     }
 
     public void draw(MatrixStack stack, int x, int y, int maxX, int maxY, int mouseX, int mouseY) {
+
+        button.changeFocus(mouseX > x && mouseX < maxX && mouseY > y && mouseY < maxY);
+
         super.draw(stack, x, y, maxX, maxY, mouseX, mouseY);
         if (super.displayName != null) {
             LabyMod.getInstance().getDrawUtils().drawRectangle(stack, x - 1, y, x, maxY, Color.GRAY.getRGB());
@@ -57,5 +60,7 @@ public class ButtonElement extends ControlElement {
         super.mouseClicked(mouseX, mouseY, mouseButton);
         this.button.mouseClicked((double)mouseX, (double)mouseY, mouseButton);
     }
+
+
 
 }
