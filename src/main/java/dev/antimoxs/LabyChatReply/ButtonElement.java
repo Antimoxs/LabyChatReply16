@@ -35,7 +35,7 @@ public class ButtonElement extends ControlElement {
 
     public void draw(MatrixStack stack, int x, int y, int maxX, int maxY, int mouseX, int mouseY) {
 
-        button.changeFocus(mouseX > x && mouseX < maxX && mouseY > y && mouseY < maxY);
+
 
         super.draw(stack, x, y, maxX, maxY, mouseX, mouseY);
         if (super.displayName != null) {
@@ -48,6 +48,22 @@ public class ButtonElement extends ControlElement {
         LabyModCore.getMinecraft().setButtonXPosition(this.button, maxX - buttonWidth - 2);
         LabyModCore.getMinecraft().setButtonYPosition(this.button, y + 1);
         this.button.renderButton(stack, mouseX, mouseY, 1);
+
+        boolean shouldBeFocused = mouseX > button.x
+                && mouseX < (button.x+button.getWidth())
+                && mouseY > button.y
+                && mouseY < (button.y+button.getHeightRealms());
+        if (button.isFocused()) {
+
+            if (!shouldBeFocused) button.changeFocus(false);
+
+        }
+        else {
+
+            if (shouldBeFocused) button.changeFocus(true);
+
+        }
+
     }
 
     public void setEnabled(boolean enabled) {
