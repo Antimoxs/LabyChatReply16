@@ -163,7 +163,9 @@ public class OnMessageSendListener {
 
         for (ChatUser u : LabyMod.getInstance().getLabyConnect().getFriends()) {
 
+            // Check for name then uuid
             if (u.getGameProfile().getName().equals(name)) return u;
+            if (u.getGameProfile().getId().toString().equals(name)) return u;
 
         }
 
