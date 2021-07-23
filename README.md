@@ -18,3 +18,6 @@ You are now able to make custom commands for friends within the ingame settings.
 Ingame commands matching the syntax:
 > /anti _message_<p>
 > /laby boi _message_
+
+### New in 1.2.1
++ Fixed a bug where the reload button would not change style upon hovering.
