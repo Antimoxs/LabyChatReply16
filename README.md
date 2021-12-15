@@ -1,6 +1,8 @@
 # LabyChatReply for LabyMod 1.16.5 [v1.3] [![Gradle build](https://github.com/Antimoxs/LabyChatReply16/actions/workflows/gradle.yml/badge.svg)](https://github.com/Antimoxs/LabyChatReply16/actions/workflows/gradle.yml)
 by Antimoxs
 
+### Not the right MC version? Check out other versions: \[ [1.8](https://github.com/Antimoxs/LabyChatReply) ] \[ [1.12.2](https://github.com/Antimoxs/LabyChatReply12) ]
+
 Reply to the LabyMod Chat ingame with LabyChatReply by Antimoxs. For more information join our discord: https://discord.gg/ATdbUS4
 
 ## Commands:
